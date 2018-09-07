@@ -9,7 +9,7 @@ create table users(
 alter table users add column isadmin integer;
 alter table users alter isadmin type boolean USING isadmin::boolean;
 alter table users alter column isadmin set default false;
-alter table users add constraint primaryKey_tmp primary key (id);
+alter table users add constraint PK primary key (id);
 
 create table tasks(
   id serial,
