@@ -27,6 +27,6 @@ SELECT min(purch_amt) FROM orders;
 SELECT * FROM customers WHERE cust_name LIKE '%b';
 SELECT * FROM orders WHERE customer_id IN (SELECT customer_id FROM customers WHERE city='New Yoork');
 SELECT * FROM customers WHERE customer_id IN (SELECT customer_id FROM orders WHERE purch_amt>10);
-SELECT sum(grade) AS "sum_grade" FROM customers;
+SELECT sum(grade) FROM customers;
 SELECT * FROM customers WHERE cust_name NOTNULL;
 SELECT max(grade) FROM customers;
