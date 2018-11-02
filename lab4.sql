@@ -1,4 +1,4 @@
-CREATE DATABASE lab5;
+
 
 CREATE TABLE customers(
   customer_id INT PRIMARY KEY,
